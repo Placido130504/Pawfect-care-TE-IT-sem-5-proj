@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../Global/ProductsContext'
 import { CartContext } from '../Global/CartContext'
-
+import './Products.css';
 export const Products = () => {
 
     const { products } = useContext(ProductsContext);

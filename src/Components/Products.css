@@ -1,0 +1,83 @@
+/* Products container styling */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Individual product card styling */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+    transform: translateY(-5px); /* Hover lift effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Product image styling */
+.product-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+.product-card:hover .product-img img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Product name styling */
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Product price styling */
+.product-price {
+    font-size: 1.1rem;
+    color: #28a745; /* Green for pricing */
+    margin-bottom: 10px;
+}
+
+/* Add to cart button styling */
+.addcart-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Hover effect for Add to Cart button */
+.addcart-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Typography for section title */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
