@@ -1,0 +1,82 @@
+/* cashout.css */
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./cashout_UI.jpg'); /* Customize the image for cashout */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.form-group {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for better readability */
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group h2 {
+    color: #ffdd57; /* Golden color for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-control:disabled {
+    opacity: 0.6;
+}
+
+.mybtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mybtn:hover {
+    background-color: #218838;
+}
+
+.success-msg {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}

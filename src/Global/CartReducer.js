@@ -93,3 +93,37 @@ export const CartReducer = (state, action) => {
     }
 
 }
+
+
+
+// export const CartReducer = (state, action) => {
+//     switch (action.type) {
+//         case 'ADD':
+//             const existingProductIndex = state.shoppingCart.findIndex(product => product.ProductID === action.product.ProductID);
+//             let updatedShoppingCart;
+
+//             if (existingProductIndex >= 0) {
+//                 // If product already exists in the cart, update the quantity
+//                 const existingProduct = state.shoppingCart[existingProductIndex];
+//                 updatedShoppingCart = state.shoppingCart.map((product, index) =>
+//                     index === existingProductIndex
+//                         ? { ...existingProduct, qty: existingProduct.qty + 1, TotalProductPrice: existingProduct.TotalProductPrice + action.product.ProductPrice }
+//                         : product
+//                 );
+//             } else {
+//                 // If product does not exist, add it to the cart
+//                 updatedShoppingCart = [...state.shoppingCart, action.product];
+//             }
+
+//             // Calculate total price and quantity
+//             const totalPrice = updatedShoppingCart.reduce((total, product) => total + product.TotalProductPrice, 0);
+//             const totalQty = updatedShoppingCart.reduce((total, product) => total + product.qty, 0);
+
+//             return { ...state, shoppingCart: updatedShoppingCart, totalPrice, totalQty };
+
+//         // other cases...
+
+//         default:
+//             return state;
+//     }
+// };

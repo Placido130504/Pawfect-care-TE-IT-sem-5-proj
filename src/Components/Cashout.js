@@ -3,6 +3,7 @@ import { auth, db } from '../Config/Config'
 import { CartContext } from '../Global/CartContext'
 import { Navbar } from './Navbar';
 import { useHistory } from 'react-router-dom'
+//import './Cashout.css' ;
 
 export const Cashout = (props) => {
 
@@ -63,10 +64,10 @@ export const Cashout = (props) => {
             <Navbar user={props.user} />
             <div className='container'>
                 <br />
-                <h2>Cashout Details</h2>
                 <br />
                 {successMsg && <div className='success-msg'>{successMsg}</div>}
                 <form autoComplete="off" className='form-group' onSubmit={cashoutSubmit}>
+                    <h2>Cashout Details</h2>
                     <label htmlFor="name">Name</label>
                     <input type="text" className='form-control' required
                         value={name} disabled />
