@@ -1,3 +1,5 @@
+Use firebase db in test mode for it to work
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
